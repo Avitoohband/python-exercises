@@ -1,0 +1,62 @@
+add customers:
++ Tuchband 203341854
++ Mizrahi 1
++ Yizhaki 3
++ Herman 4
++ Herman 5
+add customer with identical id to someone else that is already exist
++ Toohband 203341854
+
+del customers
+del first
+- Tuchband 203341854
+ del last
+- Herman 5
+- Yizhaki 3
+
+del not existing customer
+- Levy 123456789
+add record
+Mizrahi 1 AD1234 +
+Mizrahi 1 AD1245 +
+
+del record
+Mizrahi 1 AD1234 -
+Mizrahi 1 AD1245 -
+
+add/del record from not existing customer
+Cohen 221548597 AD1212 +
+Cohen 221548597 AD1212 -
+
+show a book can't be borrowed when have already 10 
+Mizrahi 1 AD0001 +
+Mizrahi 1 AD0002 +
+Mizrahi 1 AD0003 +
+Mizrahi 1 AD0004 +
+Mizrahi 1 AD0005 +
+Mizrahi 1 AD0006 +
+Mizrahi 1 AD0007 +
+Mizrahi 1 AD0008 +
+Mizrahi 1 AD0009 +
+Mizrahi 1 AD0010 +
+Mizrahi 1 AD0011 +
+
+ask what books does he have
+? 1
+
+ask who have a certain book
+? AD0008
+
+do the same for books that a few have
+look for not borrowed book code
+
+ask what books does he have with a non existing id
+? 318154875
+
+print ? !
+print ? ! when no one has books
+
+? newest
+? oldest
+? list
+
